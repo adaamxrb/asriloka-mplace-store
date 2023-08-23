@@ -1,6 +1,6 @@
 'use client';
 
-import { Expand } from 'lucide-react';
+import { Expand, ShoppingCart } from 'lucide-react';
 import Image from 'next/image';
 
 import { Product } from '@/types';
@@ -28,6 +28,15 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
 							onClick={() => {}}
 							icon={
 								<Expand size={20} className="text-gray-600" />
+							}
+						/>
+						<IconButton
+							onClick={() => {}}
+							icon={
+								<ShoppingCart
+									size={20}
+									className="text-gray-600"
+								/>
 							}
 						/>
 					</div>
